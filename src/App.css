@@ -1,0 +1,369 @@
+
+
+.album {
+  text-align: center;
+  padding:15px;
+  border-radius: 5px;
+}
+.recipe-card-read-button{
+  margin-right: 20px;
+}
+.read-icon{
+  padding-left: 5px;
+}
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+
+body {
+  background: #f9f9f9;
+}
+
+#card-container {
+  background: #ededed;
+  box-shadow: 0px 0px 200px #999;
+  font-family: 'Oxygen', sans-serif;
+  width: 65%;
+  height: 385px;
+  margin: 5% auto;
+}
+
+#card-title {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background: #455560;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+#details {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 15px 20px;
+}
+
+.detail-value {
+  color: #455560;
+}
+
+#card-items {
+  background: #ededed;
+  font-family: 'Oxygen', sans-serif;
+  padding: 20px
+}
+
+.card-item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ul.checkmark li:before {
+    color: #455560;
+    content:"\2713\0020";
+    font-weight: 600;
+    margin-left: -38px;
+    margin-right: 10px;
+}
+
+.checkmark li {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#method {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
+  padding: 20px;
+}
+
+#method li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: -38px;
+  list-style-type: none;
+}
+
+#recipe-image {
+  background: url('https://images.unsplash.com/photo-1497534547324-0ebb3f052e88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1290&q=80');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol > li::before {
+  font-weight: bold;
+  content: counter(item) ".";
+  margin-right: 8px;
+}
+
+#form-recipe-steps{
+  height: 150px !important;
+}
+
+.tag-container {
+  min-width: 60%;
+  max-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 25px;
+  margin: 2px 5px 2px 0px;
+  color: white;
+}
+
+.tag-container input {
+  border: none;
+  flex: 1;
+  outline: none;
+  padding: 5;
+  background: black;
+  color: white;
+}
+.tag span {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.card {
+  min-height: 420px;
+  max-height: 420px;
+  overflow-y: hidden;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -150px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+}
+.recipe-card-button-container{
+  margin: 20px;
+}
+.card-image-container{
+  height: 200px;
+}
+.card-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height:100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: floralwhite !important;
+  border-radius: 50px !important;
+}
+.card:hover{
+  transform: scale(1.1); 
+  transition: transform .5s ease;
+}
+.main-title h1 {
+  margin-top: 20px;
+  text-align: center;
+  color:#222; font-size:30px; font-weight:400;
+  text-transform: uppercase;
+  word-spacing: 1px; letter-spacing:2px; color:#c50000;
+}
+
+
+
+.recipe-card-add-button{
+  margin-top: 20px;
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 10%;
+}
+
+.recipe-form{
+  margin: auto;
+  position: relative;
+}
+.recipe-divider{
+  width: 10%;
+  margin: auto;
+}
+.recipe-form-button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -100px;
+}
+.recipe-card {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  box-shadow: 0px 0px 20px 1px rgba(240,241,243,1);
+  border:1px solid #f0f1f3;
+  width: 300px;
+  margin: 50px auto;
+}
+.recipe-card__body {    
+    padding: 20px;
+}
+.recipe-card__heading {
+  padding: 0;
+  margin: 0 0 0;
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-card__ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  column-count: 1;
+}
+  li {
+    margin-bottom: 5px;
+  }
+  .recipe-card__ingredients li:before {
+    content: '\2022';
+    color: #c50000;
+    margin-right: 5px;
+  }
+
+
+.recipe-card__ingredients {
+  margin: 0 0 20px;
+  padding: 0;
+ 
+ }
+  li {
+    display: inline-block;
+    margin-right: 30px
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h3:after {
+    content: '';
+    display: block;
+    width: 0%;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-bottom: 5px solid #c50000;
+    transition: width 250ms ease-in-out 0s;
+  }
+  h3:hover {
+    cursor: pointer;
+  }
+  h3:hover:after, h3.active:after {
+   width: 100%; 
+  }
+
+@media (max-width:1200px){
+  .recipe-card-add-button{
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+  }
+  .recipe-card-button-container{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .card {
+    min-height: 500px;
+    max-height: 500px;
+    overflow-y: hidden;
+  }
+  
+}
+@media (max-width:500px){
+  .recipe-card-add-button{
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+  .recipe-card-button-container{
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width:599px) {
+  .recipe-card {
+    width: 600px
+  }
+
+  .recipe-card__ingredients {
+    column-count: 2
+  }
+}
+.nav-item button{
+  color:#c50000 !important;
+}
+.image-container{
+  margin: auto;
+  margin-top: 20px !important;
+
+}
+.card-img {
+  object-fit: cover;
+  min-height: 300px;
+  max-height: 300px;
+  
+}
+.detailed-recipe-button-container{
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+}
+.detailed-trash {
+  margin-left: 20px;
+}
+.ReactTags__selected{
+  margin-top: 10px;
+}
+.ReactTags__remove {
+  margin-left: 5px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.card-body{
+  padding: 0px !important;
+}
